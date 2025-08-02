@@ -1,12 +1,14 @@
 name: ZMK Firmware Build
 
-# ✅ 手動実行のみを有効化
 on:
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # ✅ PATを使ってPushできるようにする
 
     steps:
       - name: Checkout repository
@@ -32,3 +34,14 @@ jobs:
         with:
           name: firmware
           path: build/zephyr/zmk.uf2
+
+      # ✅ PATを使って成果物をリポジトリへPush
+      - name: Commit firmware back to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p output
+          cp build/zephyr/zmk.uf2 output/
+          git add output/*
+          git commit -m "Add built firmware [skip ci]" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }} HEAD:master
