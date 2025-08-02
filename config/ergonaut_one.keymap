@@ -53,20 +53,20 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E                 &kp R         &kp T        &kp Y        &kp U          &kp I      &kp O    &kp P     &kp MINUS
-&mt LEFT_ALT TAB  &kp A  &kp S  &kp D                 &kp F         &kp G        &kp H        &kp J          &kp K      &kp L    &kp SEMI  &mt RCTRL COLON
-&kp LCTRL         &kp Z  &kp X  &kp C                 &kp V         &lt 2 B      &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                &mt LEFT_SHIFT GRAVE  &kp LEFT_WIN  &lt 1 SPACE  &lt 2 ENTER  &kp BACKSPACE  &lt 2 DEL
+&kp ESC           &kp Q  &kp W  &kp E                 &kp R         &kp T        &kp Y        &kp U          &kp I                &kp O    &kp P     &kp MINUS
+&mt LEFT_ALT TAB  &kp A  &kp S  &kp D                 &kp F         &kp G        &kp H        &kp J          &kp K                &kp L    &kp SEMI  &mt RCTRL COLON
+&kp LCTRL         &kp Z  &kp X  &kp C                 &kp V         &lt 2 B      &kp N        &kp M          &kp COMMA            &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                                &mt LEFT_SHIFT GRAVE  &kp LEFT_WIN  &lt 1 SPACE  &lt 2 ENTER  &kp BACKSPACE  &mt RIGHT_SHIFT DEL
             >;
         };
 
         lower_layer {
             display-name = "SYM";
             bindings = <
-&none              &kp EXCL     &kp QUESTION      &kp JP_LBRACKET       &kp JP_RBRACKET        &kp JP_TILDE       &kp K_CALCULATOR  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none         &kp KP_MINUS
-&kp JP_UNDERSCORE  &kp HASH     &kp DOLLAR        &kp JP_LPAREN         &kp JP_RPAREN          &kp JP_AT          &none             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_PLUS   &kp JP_ASTERISK
-&kp JP_CARET       &kp PERCENT  &kp JP_AMPERSAND  &kp JP_YEN            &kp JP_QUOTE           &kp JP_DQUOTE      &kp NUMBER_0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
-                                       &trans                &trans                 &trans             &trans            &trans        &trans
+&none              &kp EXCL     &kp QUESTION      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_TILDE   &kp K_CALCULATOR  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none        &kp KP_MINUS
+&kp JP_UNDERSCORE  &kp HASH     &kp DOLLAR        &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_AT      &none             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_PLUS  &kp JP_ASTERISK
+&kp JP_CARET       &kp PERCENT  &kp JP_AMPERSAND  &kp JP_YEN       &kp JP_QUOTE     &kp JP_DQUOTE  &kp NUMBER_0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH    &none
+                                                  &trans           &trans           &trans         &trans            &trans        &trans
             >;
         };
 
