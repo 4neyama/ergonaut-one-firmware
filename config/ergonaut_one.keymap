@@ -63,9 +63,9 @@
         lower_layer {
             display-name = "SYM";
             bindings = <
-&none      &kp EXCL     &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE          &kp K_CALCULATOR  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none      &kp KP_MINUS
-&kp UNDER  &kp HASH     &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT             &none             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp ASTERISK
-&kp CARET  &kp PERCENT  &kp AMPERSAND  &kp BACKSLASH         &kp SQT                &kp DOUBLE_QUOTES  &kp NUMBER_0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
+&none              &kp EXCL     &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE          &kp K_CALCULATOR  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none      &kp KP_MINUS
+&kp JP_UNDERSCORE  &kp HASH     &kp DOLLAR     &kp JP_LPAREN         &kp JP_RPAREN          &kp JP_AT          &none             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp ASTERISK
+&kp CARET          &kp PERCENT  &kp AMPERSAND  &kp BACKSLASH         &kp SQT                &kp DOUBLE_QUOTES  &kp NUMBER_0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
                                        &trans                &trans                 &trans             &trans            &trans        &trans
             >;
         };
