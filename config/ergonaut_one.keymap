@@ -6,7 +6,9 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
+
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -40,8 +42,8 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <LWR RSE>;
-            then-layer = <ADJ>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -51,10 +53,10 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E                               &kp R         &kp T        &kp Y        &kp U          &kp I        &kp O    &kp P     &kp MINUS
-&mt LEFT_ALT TAB  &kp A  &kp S  &kp D                               &kp F         &kp G        &kp H        &kp J          &kp K        &kp L    &kp SEMI  &mt RCTRL COLON
-&kp LCTRL         &kp Z  &kp X  &kp C                               &kp V         &lt 2 B      &kp N        &kp M          &kp COMMA    &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                &mt LEFT_SHIFT LANG_ZENKAKUHANKAKU  &kp LEFT_WIN  &lt 1 SPACE  &lt 2 ENTER  &kp BACKSPACE  &lt RSE DEL
+&kp ESC           &kp Q  &kp W  &kp E                               &kp R         &kp T        &kp Y        &kp U          &kp I      &kp O    &kp P     &kp MINUS
+&mt LEFT_ALT TAB  &kp A  &kp S  &kp D                               &kp F         &kp G        &kp H        &kp J          &kp K      &kp L    &kp SEMI  &mt RCTRL COLON
+&kp LCTRL         &kp Z  &kp X  &kp C                               &kp V         &lt 2 B      &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                                &mt LEFT_SHIFT LANG_ZENKAKUHANKAKU  &kp LEFT_WIN  &lt 1 SPACE  &lt 2 ENTER  &kp BACKSPACE  &lt 2 DEL
             >;
         };
 
